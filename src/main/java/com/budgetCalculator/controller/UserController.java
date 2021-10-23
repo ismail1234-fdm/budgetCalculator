@@ -67,7 +67,6 @@ public class UserController {
         System.out.println("response:" + this.userServiceImp.getUserByUsername(username));
        return this.userServiceImp.getUserByUsername(username);
     }
-
     //if the Token is expired, we send to client thé refreshToken
     @GetMapping("token/refresh")
     public void refreshToken(HttpServletRequest request, HttpServletResponse response) throws IOException {
